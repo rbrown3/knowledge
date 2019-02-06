@@ -1,0 +1,9 @@
+<%= @student.name %>
+<label> Reading Proficiency: </label>
+<%= @student.reading_proficiency %>
+<label> Math Proficiency:</label>
+<%= @student.math_proficiency %>
+
+<%= form_tag(student_path(@student), method: :delete) do %>
+  <%= submit_tag "Delete" %>
+<% end %>
